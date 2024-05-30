@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 @SpringBootApplication
-class CatsgramApp {
+public class CatsgramApp {
     public static void main(final String[] args) {
         SpringApplication.run(CatsgramApp.class, args);
 //        final Gson gson = new Gson();

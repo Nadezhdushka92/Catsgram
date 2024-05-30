@@ -1,0 +1,13 @@
+
+‡
+java:S2175""?A "Map<Long, User>" cannot contain a "String" in a "Long" type.(’åÇÐüÿÿÿÿ8ÑÉö×ü1J$4cafc8f8-c1ef-48cc-b00d-d159eeb7104b
+~	java:S125'"<This block of commented-out lines of code should be removed.(ö‰8©Éö×ü1J$9ef0538a-0fd9-4a3c-b36b-1bfb7b1dce1c
+~	java:S125@"<This block of commented-out lines of code should be removed.(ö‰8ÉÉö×ü1J$605f40e7-2b84-4c91-ad6a-07b5c4452977
+X	java:S125E"<This block of commented-out lines of code should be removed.(ÓÔ›é8Ö„ºØü1
+ƒ	java:S125J"<This block of commented-out lines of code should be removed.(ºâˆ›øÿÿÿÿ8·à¢Øü1J$72c8daa0-f463-4d71-9e79-75ade15c04d1
+‡
+java:S1128"DRemove this unused import 'ru.yandex.practicum.catsgram.model.Post'.(«°ö¬8¾ƒÿ×ü1J$c07669b9-f2ea-49d2-90cb-2c303d8295dc
+x
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8¿ƒÿ×ü1J$11ff67ca-42ad-4049-bbdb-2a2de0db6491
+‚
+java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8Áƒÿ×ü1J$71d5db23-ae6a-4e3a-94f1-fe8f2e3cd913
