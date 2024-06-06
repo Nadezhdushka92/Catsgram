@@ -35,3 +35,5 @@ Ssrc/main/java/ru/yandex/practicum/catsgram/exception/ParametrNotValidException.
 Tsrc/main/java/ru/yandex/practicum/catsgram/exception/ParameterNotValidException.java,1\0\101d6aa9571c66511c2ad518db38d1eb2921cb58
 s
 Csrc/main/java/ru/yandex/practicum/catsgram/service/PostService.java,0\d\0d2f627fb1ddd278b83460cc6dd8c7562487770a
+s
+Csrc/main/java/ru/yandex/practicum/catsgram/service/UserService.java,c\e\cecc48048253247fef0a87cc469e8cfa9543fc3a
