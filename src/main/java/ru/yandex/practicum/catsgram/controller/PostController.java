@@ -11,8 +11,7 @@ import java.util.Collection;
 @RequestMapping("/posts")
 public class PostController {
     private final PostService postService;
-
-    @Autowired
+  
     public PostController (PostService postService ) {
         this.postService = postService;
     }

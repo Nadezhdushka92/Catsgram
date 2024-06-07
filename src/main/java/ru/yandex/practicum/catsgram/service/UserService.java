@@ -26,7 +26,7 @@ public class UserService{
         }
 
         if (users.containsKey(user.getEmail())) {
-            throw new DuplicateFormatFlagsException("Этот имейл уже используется");
+            throw new DuplicateDataException("Этот имейл уже используется");
         }
         // формируем дополнительные данные
         user.setId(getNextIdUser());

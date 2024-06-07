@@ -3,7 +3,7 @@ package ru.yandex.practicum.catsgram.model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 @Data
-@EqualsAndHashCode(of = { "id" })
+@EqualsAndHashCode(of = {"id"})
 public class Image {
     Long id; //— уникальный идентификатор изображения,
     long postId; //— уникальный идентификатор поста, к которому прикреплено изображение,
