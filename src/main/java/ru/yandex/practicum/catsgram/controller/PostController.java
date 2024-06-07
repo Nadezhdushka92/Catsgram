@@ -1,6 +1,6 @@
 package ru.yandex.practicum.catsgram.controller;
 
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.yandex.practicum.catsgram.model.Post;
 import ru.yandex.practicum.catsgram.service.PostService;
@@ -11,23 +11,28 @@ import java.util.Collection;
 @RequestMapping("/posts")
 public class PostController {
     private final PostService postService;
-
-    public PostController(PostService postService) {
+  
+    public PostController (PostService postService ) {
         this.postService = postService;
     }
 
     @GetMapping
-    public Collection<Post> findAll() {
+    public Collection<Post> findAll () {
         return postService.findAll();
     }
 
-    @PostMapping
-    public Post create(@RequestBody Post post) {
+    @PostMapping//(value = "/post")
+    public Post create (@RequestBody Post post ) {
         return postService.create(post);
     }
 
     @PutMapping
-    public Post update(@RequestBody Post newPost) {
+    public Post update (@RequestBody Post newPost ) {
         return postService.update(newPost);
+    }
+
+    @GetMapping("/post/{postId}")
+    public Post findPost(@PathVariable("postId") Long postId){
+        return postService.findPostById(postId);
     }
 }
