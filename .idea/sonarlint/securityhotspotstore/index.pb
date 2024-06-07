@@ -21,3 +21,17 @@ Isrc/main/java/ru/yandex/practicum/catsgram/controller/PostController.java,c\3\
 Ssrc/main/java/ru/yandex/practicum/catsgram/exception/ConditionsNotMetException.java,a\5\a5d288168962a04d6c3eb330081764c16fc4ddc2
 {
 Ksrc/main/java/ru/yandex/practicum/catsgram/exception/NotFoundException.java,d\8\d8edd792593bf67b66014f1c234a0f3968e779e4
+s
+Csrc/main/java/ru/yandex/practicum/catsgram/service/PostService.java,0\d\0d2f627fb1ddd278b83460cc6dd8c7562487770a
+s
+Csrc/main/java/ru/yandex/practicum/catsgram/service/UserService.java,c\e\cecc48048253247fef0a87cc469e8cfa9543fc3a
+
+Osrc/main/java/ru/yandex/practicum/catsgram/exception/InvalidEmailException.java,6\a\6a27ea8091dc9575ff4403632d212150e64dbb24
+z
+Jsrc/main/java/ru/yandex/practicum/catsgram/exception/UserAlreadyExist.java,3\c\3ccbbc038ce5ed081df1f5111aa6f7d9fb1e6786
+y
+Isrc/main/java/ru/yandex/practicum/catsgram/controller/UserController.java,6\7\67d434439e48fb7c8a8063edecef523da7a7e447
+ƒ
+Ssrc/main/java/ru/yandex/practicum/catsgram/exception/UserAlreadyExistException.java,c\0\c0e64d397d58222e694f73a9c7d146123f409e06
+€
+Psrc/main/java/ru/yandex/practicum/catsgram/exception/DublicateDataException.java,4\4\44963b4cf819efaf5bb31149e402d6f8448cb29e

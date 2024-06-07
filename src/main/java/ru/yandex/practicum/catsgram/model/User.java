@@ -11,5 +11,5 @@ public class User {
     String username; //— имя пользователя,
     String email; //— электронная почта пользователя,
     String password; //— пароль пользователя,
-    Instant registrationDate; //— дата и время регистрации.
+    String registrationDate; //— дата и время регистрации.
 }
