@@ -1,5 +1,7 @@
 
-~	java:S125""<This block of commented-out lines of code should be removed.(ö‰8½¨é ÿ1J$158fe665-190d-4405-a74b-e4be39a52030
-~	java:S125:"<This block of commented-out lines of code should be removed.(ö‰8Ñ¨é ÿ1J$5f459d8b-688b-4fdc-a4fe-2aff5cfbd55e
-~	java:S125?"<This block of commented-out lines of code should be removed.(ÓÔ›é8Ó¨é ÿ1J$d3cb3159-2d78-4888-8e2c-c61f62a8c3ae
-ƒ	java:S125D"<This block of commented-out lines of code should be removed.(ºâˆ›øÿÿÿÿ8Ú¨é ÿ1J$be1fb8f9-c8cc-4bca-a39d-e4478b483034
+java:S2175 "Map<Long, User>" cannot contain a "String" in a "Long" type.
+java:S125<This block of commented-out lines of code should be removed.
+java:S125<This block of commented-out lines of code should be removed.
+java:S125<This block of commented-out lines of code should be removed.
+java:S125<This block of commented-out lines of code should be removed.
+

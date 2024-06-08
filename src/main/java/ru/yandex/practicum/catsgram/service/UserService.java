@@ -42,14 +42,6 @@ public class UserService{
         return user;
     }
 
-    @ResponseStatus(HttpStatus.CREATED)
-    public Optional<User>findUserById(long authorId) {
-        return users.values()
-                .stream()
-                .filter(x -> x.getId() == authorId)
-                .findFirst();
-    }
-
     public User update(User newUser) {
         if (newUser.getId() == null) {
             throw new ConditionsNotMetException("Id должен быть указан");
@@ -83,8 +75,12 @@ public class UserService{
         throw new NotFoundException("Адрес электронной почты = " + newUser.getEmail() + " не найден");
     }
 
-    public Optional<User> findById(long authorId) {
-        return Optional.ofNullable(users.get(authorId));
+    @ResponseStatus(HttpStatus.CREATED)
+    public Optional<User>findUserById(long authorId) {
+        return users.values()
+                .stream()
+                .filter(x -> x.getId() == authorId)
+                .findFirst();
     }
 
     // вспомогательный метод для генерации идентификатора нового поста

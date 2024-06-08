@@ -1,7 +1,6 @@
 
-–
-java:S1192$"SDefine a constant instead of duplicating this literal " Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½" 3 times.(ÆÆµœ8Œâ¶Ÿÿ1J$1067af98-3ea7-484b-bf13-d5b02db6889e
-w
-java:S2201#"/The return value of "orElseThrow" must be used.(õçÜƒúÿÿÿÿ8˜„¶Ÿÿ1J$44066740-45fe-4d6d-9ee6-5684515d79e8
-w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8¶„¶Ÿÿ1J$253b09b7-6fea-44c8-a3a5-0719b364bd3f
+java:S6204 Replace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'
+
+java:S125<This block of commented-out lines of code should be removed.
+
+java:S1128 Remove this unused import 'ru.yandex.practicum.catsgram.model.SortOrder'.
