@@ -1,13 +1,10 @@
 package ru.yandex.practicum.catsgram.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import ru.yandex.practicum.catsgram.model.SortOrder;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.yandex.practicum.catsgram.model.Post;
 import ru.yandex.practicum.catsgram.service.PostService;
 
-import java.util.Collection;
 import java.util.List;
 
 @RestController
