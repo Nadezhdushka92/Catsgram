@@ -17,3 +17,8 @@ o
 ?src/main/java/ru/yandex/practicum/catsgram/model/ImageData.java,d\a\dae4acac9cc16e04d4c398a989e0e6b4262e1967
 |
 Lsrc/main/java/ru/yandex/practicum/catsgram/exception/ImageFileException.java,d\b\db13f562dda497fdd783b3b6ff22d34b0c96851e
+w
+G.idea/sonarlint/issuestore/0/d/0d7fcbf2189c1d04b7686bca0ee60fdded230e2d,7\9\79f4cdf55a05fd1ba6403aca2d4ecf00580efa4b
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

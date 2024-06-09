@@ -1,10 +1,10 @@
 
-	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÊÀÈÿ1J$d7861882-a8da-4c3a-b488-790a56c94013
+	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÊÀÈÿ1J$a5240ada-4c7c-4bcb-a309-679770eca894
 š
-java:S6204#"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ËéÑîøÿÿÿÿ8¡ÀÈÿ1J$1817b567-864a-464b-bb55-56e1da0f1492
-ƒ	java:S125("<This block of commented-out lines of code should be removed.(«³øùúÿÿÿÿ8µ²ÀÈÿ1J$187eae20-7f20-4449-9377-a08c26c3126b
-~	java:S125+"<This block of commented-out lines of code should be removed.(¡Õ±š8‹¡ÀÈÿ1J$185709dc-91da-4d3f-8ed7-87b5fe214820
+java:S6204#"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ËéÑîøÿÿÿÿ8¡ÀÈÿ1J$a9507139-2b67-43d0-b01d-70360d7e3464
+ƒ	java:S125("<This block of commented-out lines of code should be removed.(«³øùúÿÿÿÿ8µ²ÀÈÿ1J$83cf2d19-1311-4191-b302-db7f562df350
+~	java:S125+"<This block of commented-out lines of code should be removed.(¡Õ±š8‹¡ÀÈÿ1J$8f44936d-b06e-4290-8de9-b5c7a0aedf09
 •
-java:S6204H"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¡ÀÈÿ1J$ee8e5191-a67b-4ddc-a6e7-a0d58c05ba46
+java:S6204H"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¡ÀÈÿ1J$5baed0cf-176a-48f0-9a2c-1de40bfd33d5
  
-java:S1128"]Remove this unused import 'ru.yandex.practicum.catsgram.exception.ConditionsNotMetException'.(ıÎã¬8«ÍÀÈÿ1J$45aa1cc7-1028-4c56-951d-b02eaca8732a
+java:S1128"]Remove this unused import 'ru.yandex.practicum.catsgram.exception.ConditionsNotMetException'.(ıÎã¬8«ÍÀÈÿ1J$44912747-235a-4018-add0-d97fdb413c5a
