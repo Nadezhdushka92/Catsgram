@@ -1,6 +1,6 @@
 
-java:S6204 Replace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'
-
-java:S125<This block of commented-out lines of code should be removed.
-
-java:S1128 Remove this unused import 'ru.yandex.practicum.catsgram.model.SortOrder'.
+š
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¤ÞÔ°ùÿÿÿÿ8éÉÂ¤ÿ1J$b3c2a0d6-f098-463b-8ddf-2903d6a78aaf
+ƒ	java:S125)"<This block of commented-out lines of code should be removed.(×ÿøÌùÿÿÿÿ8óÉÂ¤ÿ1J$c5ca5281-ad88-4504-a988-365d5a2c629c
+f
+java:S1128"IRemove this unused import 'ru.yandex.practicum.catsgram.model.SortOrder'.(…â¼‡8»ÏËñÿ1
