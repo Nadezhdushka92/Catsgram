@@ -2,10 +2,13 @@ package ru.yandex.practicum.catsgram.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
+import ru.yandex.practicum.catsgram.exception.ParameterNotValidException;
 import ru.yandex.practicum.catsgram.model.Post;
 import ru.yandex.practicum.catsgram.service.PostService;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/posts")
@@ -24,10 +27,13 @@ public final class PostController {
             @RequestParam(value = "sort", defaultValue = "desc", required = false) String sort) {
 
         if(!(sort.equals("asc") || sort.equals("desc"))){
-            throw new IllegalArgumentException();
+            throw new ParameterNotValidException(sort, "Получено: " + sort + " должно быть: ask или desc");
         }
-        if(page < 0 || size <= 0){
-            throw new IllegalArgumentException();
+        if(size <= 0){
+            throw new ParameterNotValidException(size.toString(), "Некорректный размер выборки. Размер должен быть больше нуля");
+        }
+        if(page < 0) {
+            throw new ParameterNotValidException(page.toString(), "Начало выборки должно быть положительным числом");
         }
 
         Integer from = page * size;
@@ -49,4 +55,5 @@ public final class PostController {
     public Post findPost(@PathVariable("postId") Long postId){
         return postService.findPostById(postId);
     }
+
 }

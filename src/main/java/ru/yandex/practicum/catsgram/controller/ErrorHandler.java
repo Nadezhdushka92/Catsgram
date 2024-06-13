@@ -3,9 +3,11 @@ package ru.yandex.practicum.catsgram.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import ru.yandex.practicum.catsgram.exception.*;
 
 @RequiredArgsConstructor
+@RestControllerAdvice
 public class ErrorHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -13,12 +15,12 @@ public class ErrorHandler {
         return new ErrorResponse(e.getMessage());
     }
 
-    @ResponseStatus(HttpStatus.CONFLICT)
+    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     public ErrorResponse handlerConditionsNotMetException(ConditionsNotMetException e) {
         return new ErrorResponse(e.getMessage());
     }
 
-    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
+    @ResponseStatus(HttpStatus.CONFLICT)
     public ErrorResponse handlerDuplicatedDataException(DuplicateDataException e) {
         return new ErrorResponse(e.getMessage());
     }
