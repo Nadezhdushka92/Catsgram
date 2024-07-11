@@ -34,3 +34,8 @@ Ksrc/main/java/ru/yandex/practicum/catsgram/exception/NotFoundException.java,d\
 Osrc/main/java/ru/yandex/practicum/catsgram/exception/InvalidEmailException.java,6\a\6a27ea8091dc9575ff4403632d212150e64dbb24
 w
 Gsrc/main/java/ru/yandex/practicum/catsgram/controller/ErrorHandler.java,e\3\e36a7f5c736f2abb5f2acb44d137ad460548d125
+k
+;src/main/java/ru/yandex/practicum/catsgram/CatsgramApp.java,3\7\379eff503893763f50e598964ab86968cb562c48
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
