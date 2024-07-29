@@ -1,59 +1,34 @@
+
 package ru.yandex.practicum.catsgram.controller;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-import ru.yandex.practicum.catsgram.exception.ParameterNotValidException;
-import ru.yandex.practicum.catsgram.model.Post;
+import ru.yandex.practicum.catsgram.dto.NewPostRequest;
+import ru.yandex.practicum.catsgram.dto.PostDto;
+import ru.yandex.practicum.catsgram.dto.UpdatePostRequest;
 import ru.yandex.practicum.catsgram.service.PostService;
 
-import java.util.List;
-import java.util.Map;
-
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/posts")
-//@RequiredArgsConstructor
-public final class PostController {
+public class PostController {
     private final PostService postService;
-    @Autowired
-    public PostController(PostService postService) {
-        this.postService = postService;
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public PostDto createPost(@RequestBody NewPostRequest post) {
+        return postService.createPost(post);
     }
 
-    @GetMapping//("/posts")
-    public List<Post> findAll(
-            @RequestParam(value = "page", defaultValue = "0", required = false) Integer page,
-            @RequestParam(value = "size", defaultValue = "10", required = false) Integer size,
-            @RequestParam(value = "sort", defaultValue = "desc", required = false) String sort) {
-
-        if(!(sort.equals("asc") || sort.equals("desc"))){
-            throw new ParameterNotValidException(sort, "Получено: " + sort + " должно быть: ask или desc");
-        }
-        if(size <= 0){
-            throw new ParameterNotValidException(size.toString(), "Некорректный размер выборки. Размер должен быть больше нуля");
-        }
-        if(page < 0) {
-            throw new ParameterNotValidException(page.toString(), "Начало выборки должно быть положительным числом");
-        }
-
-        Integer from = page * size;
-        return postService.findAll(size, from, sort).stream().toList();
-    }
-
-    @PostMapping//(value = "/posts")
+    @GetMapping("/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public Post create (@RequestBody Post post ) {
-        return postService.create(post);
+    public PostDto getPostById(@PathVariable("postId") long postId) {
+        return postService.getPostById(postId);
     }
 
-    @PutMapping
-    public Post update (@RequestBody Post newPost ) {
-        return postService.update(newPost);
+    @PutMapping("/{postId}")
+    public PostDto updatePost(@PathVariable("postId") long postId, @RequestBody UpdatePostRequest post) {
+        return postService.updatePost(postId, post);
     }
-
-    @GetMapping("/post/{postId}")
-    public Post findPost(@PathVariable("postId") Long postId){
-        return postService.findPostById(postId);
-    }
-
 }

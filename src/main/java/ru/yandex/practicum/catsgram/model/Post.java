@@ -4,12 +4,14 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.time.Instant;
+import java.util.List;
 
 @Data
-@EqualsAndHashCode(of = {"id"})
+@EqualsAndHashCode(of = "id")
 public class Post {
-    Long id; //— уникальный идентификатор сообщения,
-    Long authorId; //— пользователь, который создал сообщение,
-    String description; //— текстовое описание сообщения,
-    Instant postDate; //— дата и время создания сообщения.
+    private long id;
+    private User author;
+    private String description;
+    private Instant postDate;
+    private List<Image> images;
 }
